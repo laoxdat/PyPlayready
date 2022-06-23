@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\1_Netflix\PlayReady\microsoft.media.playreadyclient.winmd-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED31F74A-092F-46A4-9154-516A848E5CAE}</ProjectGuid>
+    <OutputType>WinMD</OutputType>
+    <AssemblyName>Microsoft.Media.PlayReadyClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>255.255.255.255</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Media.PlayReadyClient</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime.UI.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlayReadyDecryptorSetup.cs" />
+    <Compile Include="PlayReadyEncryptionAlgorithm.cs" />
+    <Compile Include="IPlayReadyContentHeader.cs" />
+    <Compile Include="PlayReadyContentHeader.cs" />
+    <Compile Include="IPlayReadyContentHeaderFactory.cs" />
+    <Compile Include="IPlayReadyServiceRequest.cs" />
+    <Compile Include="PlayReadySoapMessage.cs" />
+    <Compile Include="IPlayReadyContentResolver.cs" />
+    <Compile Include="PlayReadyContentResolver.cs" />
+    <Compile Include="IPlayReadyIndividualizationServiceRequest.cs" />
+    <Compile Include="PlayReadyIndividualizationServiceRequest.cs" />
+    <Compile Include="IPlayReadyDomainJoinServiceRequest.cs" />
+    <Compile Include="PlayReadyDomainJoinServiceRequest.cs" />
+    <Compile Include="IPlayReadyDomainLeaveServiceRequest.cs" />
+    <Compile Include="PlayReadyDomainLeaveServiceRequest.cs" />
+    <Compile Include="IPlayReadyLicenseAcquisitionServiceRequest.cs" />
+    <Compile Include="PlayReadyLicenseAcquisitionServiceRequest.cs" />
+    <Compile Include="IPlayReadyMeteringReportServiceRequest.cs" />
+    <Compile Include="PlayReadyMeteringReportServiceRequest.cs" />
+    <Compile Include="IPlayReadyRevocationServiceRequest.cs" />
+    <Compile Include="PlayReadyRevocationServiceRequest.cs" />
+    <Compile Include="IPlayReadyLicenseManagement.cs" />
+    <Compile Include="PlayReadyLicenseManagement.cs" />
+    <Compile Include="IPlayReadyLicense.cs" />
+    <Compile Include="PlayReadyLicense.cs" />
+    <Compile Include="IPlayReadyLicenseIterableFactory.cs" />
+    <Compile Include="PlayReadyLicenseIterable.cs" />
+    <Compile Include="PlayReadyLicenseIterator.cs" />
+    <Compile Include="IPlayReadyDomain.cs" />
+    <Compile Include="PlayReadyDomain.cs" />
+    <Compile Include="IPlayReadyDomainIterableFactory.cs" />
+    <Compile Include="PlayReadyDomainIterable.cs" />
+    <Compile Include="PlayReadyDomainIterator.cs" />
+    <Compile Include="IPlayReadyStatics.cs" />
+    <Compile Include="PlayReadyStatics.cs" />
+    <Compile Include="IPlayReadySoapMessage.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
